@@ -13,7 +13,7 @@ This is an online platform where a user can write his own blogs, read blogs from
 | Enable user write a blog | Click 'new blog' | written user blog |
 ## Setup/Installation Requirements
 * Fork the data onto your own personal repository.
-* Clone Project to your machine
+* Clone Project to your machine by using the "git clone" command.
 * Activate a virtual environment on terminal: `source virtual/bin/activate`
 * Install all the requirements found in requirements file.
 * On your terminal run `chmod a+x start.py`
