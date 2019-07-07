@@ -1,0 +1,39 @@
+<div class="navbar navbar-amber navbar-inverse" style='margin-bottom: 0px;' role="navigation" id="navigate">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+            <a class="navbar-brand" href="/"> <img src="{{url_for('static',filename='images/blog.png')}}" style="height:25px;width:35px;"></a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li><a href="/blog">Write a blog</a></li>
+            </ul>
+
+
+            <ul class="nav navbar-nav navbar-right">
+                {% if current_user.is_authenticated %}
+                <li><a href="{{url_for('main.profile',uname=current_user.username)}}"><span
+              class="glyphicon glyphicon-user"></span> Profile</a></li>
+
+
+
+                <li><a href="{{url_for('auth.logout')}}"><span class="glyphicon glyphicon-log-out"></span> Sign out </a></li>
+                {% else %}
+                <li><a href="{{url_for('auth.login')}}"><span class="glyphicon glyphicon-log-in"></span> Sign in </a></li>
+                {% endif %}
+            </ul>
+
+
+        </div>
+
+    </div>
+</div>
