@@ -1,0 +1,96 @@
+{% extends 'base.html' %} {% block content %}
+
+<!-- Page Content -->
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-8 mb-5">
+            <h2>Welcome to Gera Tech blogging web app</h2>
+            <hr>
+            <p>We provide you with a comprehensive summary of the day's most important blog posts and news articles from the best Technology websites on the web, and delivered to your email inbox each morning. To subscribe, simply provide us with your email
+                address..
+            </p>
+
+        </div>
+        <br>
+        <div class="col-md-4 mb-5">
+            <h2>Contact Us</h2>
+            <hr>
+            <address>
+          <strong>Tech Blog</strong>
+          <br>Engineer Lugaga
+          <br>Kajiado | Kenya
+          <br>
+        </address>
+            <address>
+          <abbr title="Phone">Phone:</abbr>
+          +254 (0) 721 685 128
+          <br>
+          <abbr title="Email">Email:</abbr>
+          <a href="mailto:#">maureezgaga@gmail.com</a>
+        </address>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <img class="card-img-top" src="{{url_for('static',filename='images/H5G.jpg')}}" style="height:300px;width:300px;" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Huawei 5G</h4>
+                    <p class="card-text">Huawei is helping develop 5G networks for all four of the UK’s major mobile phone operators – even though the government has yet to confirm whether the controversial Chinese technology company will be permitted to build the next generation
+                        of wireless infrastructure.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://www.theguardian.com/technology/2019/jul/06/huawei-uk-mobile-5g-networks-operators-gamble-security-concerns" class="btn btn-primary">Find Out More!</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <img class="card-img-top" src="{{url_for('static',filename='images/vue.jpg')}}" style="height:300px;width:300px;" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Vue JS</h4>
+                    <p class="card-text">Vue.js is a more flexible, less opinionated solution ( than Angular ). That allows you to structure your app the way you want it to be, instead of being forced to do everything the Angular way. ... On the other hand, Vue.js is much
+                        simpler than Angular and sometimes even better.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://www.valuecoders.com/blog/technology-and-apps/vue-js-comparison-angular-react/" class="btn btn-primary">Find Out More!</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <img class="card-img-top" src="{{url_for('static',filename='images/qatar.jpg')}}" style="height:300px;width:300px;" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Qatar</h4>
+                    <p class="card-text">A land that understands a traveller can never be a stranger, just a friend not yet met. That ultimately everyone is on their own journey, seeking the warmth of a friendly embrace, unique experiences, new stories to share. Where a meal
+                        is not a meal unless it is shared</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://www.visitqatar.qa/" class="btn btn-primary">Find Out More!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Gera Tech Blog 2019</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+{% endblock %}
